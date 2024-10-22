@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto">
+        <div class="chat-window w-2/3 bg-white shadow-lg rounded-lg">
+            <div id="chat-messages" class="chat-messages h-64 overflow-y-auto mb-4"></div>
+            <div class="input-field flex items-center">
+                <textarea id="message-input" class="w-full p-2 border rounded mb-2 flex-grow"
+                    placeholder="Type a message"></textarea>
+                <footer class="chat-footer flex items-center">
+                    <button id="send-button" class="bg-blue-500 text-white px-4 py-2 rounded ml-2 flex items-center">
+                        <i class="material-icons mr-2">send</i>
+                        Send
+                    </button>
+                </footer>
+            </div>
+        </div>
+        <div class="section-divider" id="drag-handle"></div>
+        <div class="sidebar">
+            <ul id="tabs-swipe-demo" class="tabs flex space-x-4">
+                <li class="tab"><a class="active text-blue-500" href="#canned-responses"
+                        data-tab="canned-responses">Canned Responses</a></li>
+                <li class="tab"><a class="text-gray-700" href="#copilot" data-tab="copilot">Copilot</a></li>
+            </ul>
+            <div id="canned-responses" class="tab-content">
+                <input id="search-canned-responses" type="text" class="w-full p-2 border rounded mb-4"
+                    placeholder="Search Canned Responses">
+                <ul class="canned-response-list space-y-4">
+                    <li>
+                        <div class="collapsible-header flex justify-between items-center cursor-pointer">
+                            <span>Cancellation</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                        </div>
+                        <div class="collapsible-body hidden">
+                            <div class="flex justify-betw</ul>een items-center">
+                                <p>Cancellation Policy</p>
+                    </li> <button class="insert-button text-blue-500"
+                        data-content="Our cancellation policy allows you to cancel within 24 hours.">Insert</button>
+            </div>
+            <p>Our cancellation policy allows you to cancel within 24 hours.</p>
+            <div class="flex justify-between items-center">
+                <p>Refund Process</p>
+                <button class="insert-button text-blue-500"
+                    data-content="Refunds will be processed within 5-7 business days.">Insert</button>
+            </div>
+            <p>Refunds will be processed within 5-7 business days.</p>
+        </div>
+        </li>
+        <li>
+            <div class="collapsible-header flex justify-between items-center cursor-pointer">
+                <span>Educating Customer</span>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="collapsible-body hidden">
+                <div class="flex justify-between items-center">
+                    <p>How to Use</p>
+                    <button class="insert-button text-blue-500"
+                        data-content="Here is how you can use our service effectively.">Insert</button>
+                </div>
+                <p>Here is how you can use our service effectively.</p>
+                <div class="flex justify-between items-center">
+                    <p>Features</p>
+                    <button class="insert-button text-blue-500"
+                        data-content="Our service offers a variety of features to help you.">Insert</button>
+                </div>
+                <p>Our service offers a variety of features to help you.</p>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header flex justify-between items-center cursor-pointer">
+                <span>Opening</span>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="collapsible-body hidden">
+                <div class="flex justify-between items-center">
+                    <p>Welcome</p>
+                    <button class="insert-button text-blue-500"
+                        data-content="Welcome to our service! How can we assist you today?">Insert</button>
+                </div>
+                <p>Welcome to our service! How can we assist you today?</p>
+                <div class="flex justify-between items-center">
+                    <p>Introduction</p>
+                    <button class="insert-button text-blue-500"
+                        data-content="Thank you for reaching out to us. How can we help?">Insert</button>
+                </div>
+                <p>Thank you for reaching out to us. How can we help?</p>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header flex justify-between items-center cursor-pointer">
+                <span>Closing</span>
+                <i class="material-icons">arrow_drop_down</i>
+            </div>
+            <div class="collapsible-body hidden">
+                <div class="flex justify-between items-center">
+                    <p>Thank You</p>
+                    <button class="insert-button text-blue-500"
+                        data-content="Thank you for using our service. Have a great day!">Insert</button>
+                </div>
+                <p>Thank you for using our service. Have a great day!</p>
+                <div class="flex justify-between items-center">
+                    <p>Goodbye</p>
+                    <button class="insert-button text-blue-500"
+                        data-content="We appreciate your business. Goodbye!">Insert</button>
+                </div>
+                <p>We appreciate your business. Goodbye!</p>
+            </div>
+        </li>
+        </ul>
+    </div>
+    <div id="copilot" class="tab-content hidden">
+        <div class="input-field">
+            <textarea id="copilot-textarea" class="w-full p-2 border rounded"
+                placeholder="Type your message"></textarea>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
