@@ -13,6 +13,16 @@
 <body class="bg-gray-100">
     <div class="container mx-auto">
         <div class="chat-window w-2/3 bg-white shadow-lg rounded-lg">
+            <div class="chat-header">
+                <div class="info">
+                    <h2 class="name">Seiji Lee <span class="country">(Korea)</span></h2>
+                    <p class="bid">BID: <a href="#" class="bid-number">98918928</a>
+                </div>
+                <div class="actions">
+                    <button class="open-button"><i class="material-icons">arrow_forward</i> Open in Athena</button>
+                    <span class="menu-icon">⋯</span>
+                </div>
+            </div>
             <div id="chat-messages" class="chat-messages h-64 overflow-y-auto mb-4"></div>
             <div class="input-field flex items-center">
                 <textarea id="message-input" class="w-full p-2 border rounded mb-2 flex-grow"
@@ -42,18 +52,26 @@
                             <i class="material-icons">arrow_drop_down</i>
                         </div>
                         <div class="collapsible-body hidden">
-                            <div class="flex justify-between items-center">
-                                <p>Cancellation Policy</p>
-                                <button class="insert-button text-blue-500"
-                                    data-content="Our cancellation policy allows you to cancel within 24 hours.">Insert</button>
+                            <div class="canned-response">
+                                <header>
+                                    <p class="canned-response-title">Cancellation Policy</p>
+                                    <button class="insert-button text-blue-500"
+                                        data-content="Our cancellation policy allows you to cancel within 24 hours.">
+                                        <i class="material-icons">add_circle</i> Insert
+                                    </button>
+                                </header>
+                                <p class="content">Our cancellation policy allows you to cancel within 24 hours.</p>
                             </div>
-                            <p>Our cancellation policy allows you to cancel within 24 hours.</p>
-                            <div class="flex justify-between items-center">
-                                <p>Refund Process</p>
-                                <button class="insert-button text-blue-500"
-                                    data-content="Refunds will be processed within 5-7 business days.">Insert</button>
+                            <div class="canned-response">
+                                <header>
+                                    <p class="canned-response-title">Refund Process</p>
+                                    <button class="insert-button text-blue-500"
+                                        data-content="Refunds will be processed within 5-7 business days.">
+                                        <i class="material-icons">add_circle</i> Insert
+                                    </button>
+                                </header>
+                                <p class="content">Refunds will be processed within 5-7 business days.</p>
                             </div>
-                            <p>Refunds will be processed within 5-7 business days.</p>
                         </div>
                     </li>
                     <li>
@@ -62,18 +80,26 @@
                             <i class="material-icons">arrow_drop_down</i>
                         </div>
                         <div class="collapsible-body hidden">
-                            <div class="flex justify-between items-center">
-                                <p>How to Use</p>
-                                <button class="insert-button text-blue-500"
-                                    data-content="Here is how you can use our service effectively.">Insert</button>
+                            <div class="canned-response">
+                                <header>
+                                    <p class="canned-response-title">How to Use</p>
+                                    <button class="insert-button text-blue-500"
+                                        data-content="Here is how you can use our service effectively.">
+                                        <i class="material-icons">add_circle</i> Insert
+                                    </button>
+                                </header>
+                                <p class="content">Here is how you can use our service effectively.</p>
                             </div>
-                            <p>Here is how you can use our service effectively.</p>
-                            <div class="flex justify-between items-center">
-                                <p>Features</p>
-                                <button class="insert-button text-blue-500"
-                                    data-content="Our service offers a variety of features to help you.">Insert</button>
+                            <div class="canned-response">
+                                <header>
+                                    <p class="canned-response-title">Features</p>
+                                    <button class="insert-button text-blue-500"
+                                        data-content="Our service offers a variety of features to help you.">
+                                        <i class="material-icons">add_circle</i> Insert
+                                    </button>
+                                </header>
+                                <p class="content">Our service offers a variety of features to help you.</p>
                             </div>
-                            <p>Our service offers a variety of features to help you.</p>
                         </div>
                     </li>
                     <li>
@@ -83,15 +109,19 @@
                         </div>
                         <div class="collapsible-body hidden">
                             <div class="flex justify-between items-center">
-                                <p>Welcome</p>
+                                <p class="canned-response-title">Welcome</p>
                                 <button class="insert-button text-blue-500"
-                                    data-content="Welcome to our service! How can we assist you today?">Insert</button>
+                                    data-content="Welcome to our service! How can we assist you today?">
+                                    <i class="material-icons">add_circle</i> Insert
+                                </button>
                             </div>
                             <p>Welcome to our service! How can we assist you today?</p>
                             <div class="flex justify-between items-center">
-                                <p>Introduction</p>
+                                <p class="canned-response-title">Introduction</p>
                                 <button class="insert-button text-blue-500"
-                                    data-content="Thank you for reaching out to us. How can we help?">Insert</button>
+                                    data-content="Thank you for reaching out to us. How can we help?">
+                                    <i class="material-icons">add_circle</i> Insert
+                                </button>
                             </div>
                             <p>Thank you for reaching out to us. How can we help?</p>
                         </div>
@@ -103,15 +133,19 @@
                         </div>
                         <div class="collapsible-body hidden">
                             <div class="flex justify-between items-center">
-                                <p>Thank You</p>
+                                <p class="canned-response-title">Thank You</p>
                                 <button class="insert-button text-blue-500"
-                                    data-content="Thank you for using our service. Have a great day!">Insert</button>
+                                    data-content="Thank you for using our service. Have a great day!">
+                                    <i class="material-icons">add_circle</i> Insert
+                                </button>
                             </div>
                             <p>Thank you for using our service. Have a great day!</p>
                             <div class="flex justify-between items-center">
-                                <p>Goodbye</p>
+                                <p class="canned-response-title">Goodbye</p>
                                 <button class="insert-button text-blue-500"
-                                    data-content="We appreciate your business. Goodbye!">Insert</button>
+                                    data-content="We appreciate your business. Goodbye!">
+                                    <i class="material-icons">add_circle</i> Insert
+                                </button>
                             </div>
                             <p>We appreciate your business. Goodbye!</p>
                         </div>
@@ -126,7 +160,49 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Contextual Menu -->
+    <div class="contextual-menu hidden" id="contextual-menu">
+        <ul>
+            <li id="transfer-option">Transfer</li>
+            <li id="close-option">Close Conversation</li>
+        </ul>
+    </div>
+
+    <!-- Transfer Modal -->
+    <div class="modal hidden" id="transfer-modal">
+        <div class="modal-container">
+            <div class="content">
+                <i class="material-icons close" id="close-transfer-modal">close</i>
+                <h2 class="title">Transfer Conversation</h2>
+                <input class="w-full p-2 border rounded mb-4" type="text" id="agent-search"
+                    placeholder="Search for an agent">
+                <ul id="agent-list">
+                    <!-- List of agents will be populated here -->
+                </ul>
+            </div>
+            <footer>
+                <button id="cancel-close" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+                <button id="confirm-close" class="bg-blue-500 text-white px-4 py-2 rounded">Apply</button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Close Conversation Modal -->
+    <div class="modal hidden" id="close-modal">
+        <div class="modal-container">
+            <div class="content">
+                <i class="material-icons close" id="close-close-modal">close</i>
+                <h2 class="title">Close Conversation</h2>
+                <p>Are you sure you want to close this conversation?</p>
+            </div>
+            <footer>
+                <button id="confirm-close" class="bg-blue-500 text-white px-4 py-2 rounded">Close conversation</button>
+                <button id="cancel-close" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
